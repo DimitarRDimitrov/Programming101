@@ -1,0 +1,40 @@
+TABLE website;
+COLUMN id, url, title, domain, pages_count, HTML_ver
+
+TABLE pages;
+COLUMN id, website, url, title, description, ads, SSL, multi-lang, points
+
+
+
+
+deployment
+
+ssh root@*ip*
+
+apt-get updates
+
+install pip3 ; git
+
+pip3 install vietualenv
+
+which python3
+
+virtualenv -p /usr/bin/python3 SearchEngine-env
+
+source Searhengine-env/bin/activate
+
+pip install -r requirements.txt
+
+cat requirements.txt
+
+pip freeze # to check installed req
+
+who # logged users
+
+apt-get install htop
+
+python webcrawler.py & #asinhronno
+
+kill -9 PID
+
+python3 webcrawler.py > lox.txt #exports prints to a log file
